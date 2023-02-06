@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- indica versão do HTML -->
+<html> <!-- inicio do arquivo HTML -->
+	<head> <!-- inicio do cabeçalho da página -->
+		<meta charset="UTF-8"> <!-- indicação do grupos de caracteres -->
+		<!-- título da página -->
+		<title> JavaScript - COOKIES </title>
+		<!-- metas tag para o motor de busca do Google -->
+		<meta name="author" content="Henry Modesto">
+		<meta name="description" content="Criando e recuperando informações do Usuário com cookies">
+		<meta name="keywords" content="aula, JavaScrit, html, programação, programação web, cookies">
+
+        <script type="text/javascript">
+            function lerCookie() {
+                alert(document.cookie)
+            }
+            function gravarCookie(){
+                var nome = document.getElementById("txtNOME").value;
+                document.cookie = "cookie01="+nome;
+				alert("Cookie gravado com sucesso!");
+            }
+        
+        </script>
+	</head> <!-- final do cabeçalho -->
+	<body> <!-- inicio do corpo da página -->
+        <input type="text" name="txtNome" id="txtNOME">
+        <input type="button" value="Ver Cookies" onclick="lerCookie()" name="btnLer">
+		<input type="button" value="Gravar Cookie" onclick="gravarCookie()" name="btnGravar">
+        
+	</body> <!-- fim do corpo da página -->
+</html> <!-- fim do arquivo HTML 

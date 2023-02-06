@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!-- indica versão do HTML -->
+<html> <!-- inicio do arquivo HTML -->
+        <head> <!-- inicio do cabeçalho da página -->
+            <meta charset="UTF-8"> <!-- indicação do grupos de caracteres -->
+            <!-- título da página -->
+            <title> JavaScript - LOGIN </title>
+            <!-- metas tag para o motor de busca do Google -->
+            <meta name="author" content="Henry Modesto">
+            <meta name="description" content="Formulário para LOGIN do Usuário">
+            <meta name="keywords" content="aula, JavaScrit, html, programação, programação web, validação">
+
+            <!-- Chama os arquivos externo de JavaScript -->
+            <script type = "text/javascript" src="js/script.js"> </script>
+            <script type="text/javascript" src="js/info.js"></script>
+
+        </head> <!-- final do cabeçalho -->
+    <body> <!-- inicio do corpo da página -->
+        <form name="frmLogin" method="post" action="05_javascript_03.html">
+            <p>Formulário de LOGIN</p>
+            <p>Usuário: <input type="text" name="usuario" id="usuario"/></p>
+            <p>Senha: <input type="password" name="senha" id="senha"/></p>
+            <p>Perfil
+                <select name="perfil" id="perfil">
+                    <option value="">Selecione o perfil</option>
+                    <option value="aluno">Aluno</option>
+                    <option value="responsavel">Responsável</option>
+                    <option value="professor">Professor</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+            </p><label><input type="submit" name="sbt" onclick="return validar()" value="ENVIAR" /></label></p>
+        </form>
+    </body> <!-- fim do corpo da página -->
+</html> <!-- fim do arquivo HTML 
